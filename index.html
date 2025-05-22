@@ -12,89 +12,86 @@
 
   <style>
     :root {
-      --primary-color: #0d47a1;
+      --primary-color: #0f172a;
       --secondary-color: #ffffff;
-      --bg-color: #f5f7fa;
-      --accent-color: #1976d2;
+      --accent-color: #38bdf8;
+      --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b);
       --font: 'Poppins', sans-serif;
     }
 
     * {
       box-sizing: border-box;
       scroll-behavior: smooth;
+      padding: 0;
+      margin: 0;
     }
 
     body {
-      margin: 0;
       font-family: var(--font);
-      background-color: var(--bg-color);
-      color: #333;
+      background: var(--bg-gradient);
+      color: var(--secondary-color);
     }
 
     header {
-      background: var(--primary-color);
-      color: var(--secondary-color);
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem 2rem;
+      background: rgba(15, 23, 42, 0.9);
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      color: var(--accent-color);
     }
 
     header p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
+      color: #cbd5e1;
     }
 
     .btn-group {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     .btn {
       display: inline-block;
       background: var(--accent-color);
-      color: white;
-      padding: 10px 20px;
+      color: #0f172a;
+      padding: 10px 18px;
       margin: 0.3rem;
-      border-radius: 25px;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
 
     .btn:hover {
-      background: #0059c1;
+      background: #0ea5e9;
+      transform: scale(1.05);
     }
 
     section {
-      background: white;
+      background: rgba(255, 255, 255, 0.05);
       margin: 2rem auto;
       padding: 2rem;
       max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      backdrop-filter: blur(8px);
     }
 
     h2 {
-      color: var(--primary-color);
-      margin-top: 0;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
     }
 
     ul {
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--primary-color);
-      color: white;
+      padding-left: 1.5rem;
+      line-height: 1.8;
     }
 
     a {
-      color: var(--primary-color);
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -102,9 +99,17 @@
       text-decoration: underline;
     }
 
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      color: #94a3b8;
+      margin-top: 3rem;
+    }
+
     @media (max-width: 600px) {
       header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
   </style>
@@ -113,25 +118,28 @@
 
 <header>
   <h1><i class="fas fa-laptop-code"></i> Sivakumar Yadav</h1>
-  <p>Aspiring Tech Enthusiast | Exploring Web Development & Operations</p>
+  <p>Aspiring Tech Enthusiast | Exploring Web Development & DevOps</p>
   <div class="btn-group">
     <a href="https://bit.ly/44KJeNr" target="_blank" class="btn">
       <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="mailto:shivakumar495555@gmail.com" class="btn">
+      <i class="fas fa-envelope"></i> Email
     </a>
   </div>
 </header>
 
 <section>
   <h2>About Me</h2>
-  <p>I’m a motivated learner at the beginning of my tech journey. I enjoy understanding how systems work and solving real-world problems through structured thinking, coding, and collaboration.</p>
+  <p>I’m a passionate beginner exploring the tech industry—especially web development, cloud tools, and automation. I enjoy building small projects, learning through real-time challenges, and contributing wherever I can. Every line of code I write is a step closer to my dream in tech.</p>
 </section>
 
 <section>
   <h2>Experience</h2>
   <ul>
-    <li>
-      Though early in my career, I’ve gained valuable exposure to troubleshooting, debugging, and collaborative workflows. My goal is to keep learning and contribute meaningfully to tech teams and real-world projects.
-    </li>
+    <li>Assisted in debugging app issues and streamlining user experience on Turtlemint Pro</li>
+    <li>Gained experience in handling workflows and collaborating with support teams</li>
+    <li>Hands-on with GitHub, HTML/CSS, and support operations</li>
   </ul>
 </section>
 
@@ -139,9 +147,10 @@
   <h2>Skills</h2>
   <ul>
     <li>HTML & CSS (Basics)</li>
+    <li>Technical Support Understanding</li>
     <li>Debugging & Troubleshooting</li>
-    <li>Understanding Workflows</li>
     <li>Team Communication</li>
+    <li>Git & GitHub (Basic)</li>
   </ul>
 </section>
 
