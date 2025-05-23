@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sivakumar Yadav - Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
@@ -107,6 +107,85 @@
       margin-top: 3rem;
     }
 
+    .projects-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .project-card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+      color: var(--accent-color);
+      margin-bottom: 0.8rem;
+    }
+
+    .project-card a {
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.8rem;
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      max-width: 400px;
+      margin: 2rem auto;
+      backdrop-filter: blur(8px);
+    }
+
+    form h2 {
+      color: var(--accent-color);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--secondary-color);
+      border: none;
+      resize: none;
+      font-family: var(--font);
+      font-size: 1rem;
+    }
+
+    textarea::placeholder {
+      color: #cbd5e1;
+    }
+
+    textarea:focus {
+      outline: none;
+      background: rgba(56, 223, 248, 0.15);
+    }
+
+    button {
+      width: 100%;
+      background: var(--accent-color);
+      border: none;
+      padding: 12px;
+      border-radius: 30px;
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
@@ -131,26 +210,24 @@
 
 <section>
   <h2>About Me</h2>
-  <p>I’m a passionate beginner exploring the tech industry—especially web development, cloud tools, and automation. I enjoy building small projects, learning through real-time challenges, and contributing wherever I can. Every line of code I write is a step closer to my dream in tech.</p>
+  <p>I’m a passionate beginner exploring the tech industry—especially web development, cloud tools, and automation.</p>
 </section>
 
 <section>
   <h2>Experience</h2>
   <ul>
-    <li>Assisted in debugging app issues and streamlining user experience on Turtlemint Pro</li>
-    <li>Gained experience in handling workflows and collaborating with support teams</li>
-    <li>Hands-on with GitHub, HTML/CSS, and support operations</li>
+    <li>Debugged app issues on Turtlemint Pro</li>
+    <li>Worked with support teams and workflows</li>
+    <li>Hands-on with GitHub, HTML/CSS, support operations</li>
   </ul>
 </section>
 
 <section>
   <h2>Skills</h2>
   <ul>
-    <li>HTML & CSS (Basics)</li>
-    <li>Technical Support Understanding</li>
-    <li>Debugging & Troubleshooting</li>
-    <li>Team Communication</li>
-    <li>Git & GitHub (Basic)</li>
+    <li>HTML & CSS</li>
+    <li>Tech Support & Troubleshooting</li>
+    <li>Git & GitHub</li>
   </ul>
 </section>
 
@@ -160,12 +237,37 @@
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shivakumar495555@gmail.com">shivakumar495555@gmail.com</a></p>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio built using HTML and CSS.</p>
+      <a href="https://shivakumar260503.github.io/MyPortfolio/" target="_blank">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Automation Script</h3>
+      <p>A shell script that automates GitHub repo creation and file push using CLI.</p>
+      <a href="https://github.com/yourusername/automation-script" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Form -->
+<section>
+  <form action="https://formsubmit.co/shivakumar495555@gmail.com" method="POST">
+    <h2>Give Your Feedback</h2>
+    <textarea name="feedback" placeholder="Write your feedback here..." required rows="5"></textarea>
+    <!-- Disable captcha -->
+    <input type="hidden" name="_captcha" value="false" />
+    <!-- Redirect after submit (change to your real thank you page URL) -->
+    <input type="hidden" name="_next" value="https://shivakumar260503.github.io/MyPortfolio/thankyou.html" />
+    <button type="submit">Submit</button>
+  </form>
 </section>
 
 <footer>
-  <p>&copy; 2025 Sivakumar Yadav</p>
+  <p>© 2025 Sivakumar Yadav. All rights reserved.</p>
 </footer>
 
 </body>
