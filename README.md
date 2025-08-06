@@ -28,7 +28,7 @@ Check it out here: [sivakumar260503.github.io](https://sivakumar260503.github.io
 - [LinkedIn](https://bit.ly/44KJeNr)
 - **Email:** shivakumar495555@gmail.com
 - **Phone:** 12345678
-
+- **Location:** Mumbai
 
 ---
 
